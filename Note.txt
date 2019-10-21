@@ -1,7 +1,8 @@
 https://www.youtube.com/watch?v=BZzBtzl6aq4&t=216s
 https://github.com/Annie-Huang/my-svelte-project4
+https://github.com/kazzkiq/svero
 
 =====================================================================
 C:\react>npx degit sveltejs/template my-svelte-project4
 C:\react\my-svelte-project4>npm i
-
+C:\react\my-svelte-project4>npm i --save svero
