@@ -1,11 +1,20 @@
 <script>
-	export let name;
+    import { Router, Route } from 'svero';
+
+    import Header from './Header.svelte';
+    import Index from './pages/Index.svelte';
+    import About from './pages/About.svelte';
 </script>
 
 <style>
-	h1 {
-		color: purple;
-	}
+
 </style>
 
-<h1>Hello {name}!</h1>
+<Header />
+
+<div class="container">
+    <Router>
+        <Route path="*" component={Index} />
+        <Route path="/about" component={About} />
+    </Router>
+</div>
