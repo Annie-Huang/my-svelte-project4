@@ -1,3 +1,11 @@
-<h1>I'm Home</h1>
+<script>
+    let bro = 'Bro';
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolorum illum iure laudantium natus pariatur, ratione repellat. A, autem debitis mollitia nesciunt nostrum odit quae, quas quidem reiciendis sunt voluptas.</p>
+    function clickEvent() {
+        bro = 'Dude';
+    }
+</script>
+
+<h1>{bro}</h1>
+
+<button on:click={clickEvent}>Click me</button>
