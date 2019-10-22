@@ -7,7 +7,17 @@
 </script>
 
 <style>
+    /* globally find body tag in the document*/
+    :global(body) {
+        /* this will apply to <body> */
+        margin: 0;
+        padding: 0;
+    }
 
+    .container {
+        width: 80%;
+        margin: 4em auto;
+    }
 </style>
 
 <Header />

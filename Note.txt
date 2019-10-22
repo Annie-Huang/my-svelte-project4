@@ -1,4 +1,5 @@
 https://www.youtube.com/watch?v=BZzBtzl6aq4&t=216s
+https://coursetro.com/posts/code/176/Learn-Svelte-3.0---Svelte-Tutorial-for-Beginners
 https://github.com/Annie-Huang/my-svelte-project4
 https://github.com/kazzkiq/svero
 
