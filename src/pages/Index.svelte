@@ -1,18 +1,18 @@
 <script>
-    import { onDestroy } from 'svelte';
-    import { status } from '../../store.js';
+    import { onMount } from 'svelte';
 
-    let the_status;
-
-    const stat = status.subscribe(val => {
-        the_status = val;
-    });
-
-    function changeStore() {
-        status.update(n => n = 'bro');
-    }
-
-    onDestroy(stat);
+    let data = [];
+    
+    onMount(async function() {
+        const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+        const json = await response.json();
+        data = json;
+        console.log(data);
+    })
 </script>
 
-<h1 on:mouseover={changeStore}>{the_status}</h1>
+<ul>
+    {#each data as {title}}
+        <li><p>{title}</p></li>
+    {/each}
+</ul>
